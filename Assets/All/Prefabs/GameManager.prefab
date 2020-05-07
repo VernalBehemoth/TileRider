@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4687891241718973691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4687891241718973693}
+  - component: {fileID: 4687891241718973690}
+  - component: {fileID: 6379727005657965805}
+  - component: {fileID: 540883762}
+  - component: {fileID: 1869882920}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4687891241718973693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4687891241718973691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4687891241718973690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4687891241718973691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbbb89a56f51bebe9d9d46aa97a09c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 100
+  CurrentStamina: 100
+  CurrentHunger: 100
+  CurrentThirst: 100
+  mHealthBar: {fileID: 0}
+  mHungerBar: {fileID: 0}
+  mThirstBar: {fileID: 0}
+  mStaminaBar: {fileID: 0}
+  mInventoryUI: {fileID: 0}
+  infoUI: {fileID: 0}
+  bridgeIsFixed: 0
+  icons:
+  - {fileID: 21300000, guid: 9664a0f4829b154419b9de95c018e25b, type: 3}
+  - {fileID: 21300000, guid: 08d7d2578ab259d408344b41d7d40fb6, type: 3}
+  - {fileID: 21300000, guid: a62393ece2d01a84c996c97dc9e5f74d, type: 3}
+  - {fileID: 21300000, guid: 4fa99e96e22dd334babf40ec8459c026, type: 3}
+  - {fileID: 21300000, guid: 33a3ad1ada27e1d4091690fc693ed1b7, type: 3}
+  - {fileID: 21300000, guid: 4f5ee3bf4e373ed4b93ea90c4abed953, type: 3}
+  - {fileID: 21300000, guid: ec5cee953160dab438e88983801b94d8, type: 3}
+  - {fileID: 21300000, guid: 136f7693399a98f2088c264b8be321c8, type: 3}
+  - {fileID: 21300000, guid: 49565a16817a728b2ac2f9953c19b72a, type: 3}
+--- !u!114 &6379727005657965805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4687891241718973691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da99e47f1dc9a14b904852109e7605b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  familyMembers:
+  - Name: "Bj\xF6rn"
+    StartingSatisfaction: 1000
+    CurrentSatisfactionLevel: 0
+    Deterioration: 30
+  - Name: Steven
+    StartingSatisfaction: 1000
+    CurrentSatisfactionLevel: 0
+    Deterioration: 5
+  - Name: Nesterly
+    StartingSatisfaction: 1000
+    CurrentSatisfactionLevel: 0
+    Deterioration: 15
+  - Name: Florence
+    StartingSatisfaction: 1000
+    CurrentSatisfactionLevel: 0
+    Deterioration: 8
+  - Name: Uzbecheal
+    StartingSatisfaction: 1000
+    CurrentSatisfactionLevel: 0
+    Deterioration: 12
+--- !u!114 &540883762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4687891241718973691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2871f989e9bd24b914dfef3bd56b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1869882920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4687891241718973691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bd86c7fa7906674ba58008405ca96b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
